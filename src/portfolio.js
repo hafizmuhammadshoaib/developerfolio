@@ -44,7 +44,7 @@ const skillsSection = {
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and scalable backend"
-    ),
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -108,7 +108,7 @@ const educationInfo = {
       schoolName: "Hamdard University",
       logo: require("./assets/images/hamdard-university.jpeg"),
       subHeader: "Bachelors of Computer System Engineering",
-      duration: "Feb 2015 - Jan 2019",
+      duration: "Feb 2015 - Jan 2019"
       // desc: "Participated in the research of XXX and published 3 papers.",
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -161,7 +161,7 @@ const workExperiences = {
       companylogo: require("./assets/images/10pearls.jpeg"),
       date: "Oct 2019 – July 2021",
       desc: "Worked as a MERN stack/Golang developer",
-      descBullets:[
+      descBullets: [
         "worked on a telemedicine health platform application. Fixed bugs on their frontend web/android and backend nodejs application",
         "worked on a weather app reporting application. Develop new features and fixed bug on React Native application",
         "worked on a ecommerce(launder) application. develop a frontend on React.js and take devops voluntarily and deployed whole stack on EC2 instance on AWS"
@@ -173,12 +173,11 @@ const workExperiences = {
       companylogo: require("./assets/images/10pearls.jpeg"),
       date: "Aug 2021 – Present",
       desc: "Worked as a MERN stack/Golang developer",
-      descBullets:[
+      descBullets: [
         "worked on an education platform application. My role is fullstack wrote a frontend on React.js and backend on AWS-CDK lambda (Node.js)",
-        "worked on a Golang project and help a developer in golang tasks.",
+        "worked on a Golang project and help a developer in golang tasks."
       ]
-    },
-    
+    }
   ]
 };
 
@@ -207,7 +206,7 @@ const bigProjects = {
         }
         //  you can add extra buttons here.
       ]
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
