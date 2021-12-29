@@ -44,7 +44,14 @@ const skillsSection = {
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and scalable backend"
-    )
+    ),
+    emoji(
+      "⚡ I write highly testable code. I am use to of writing unit test cases with 100% code coverage on Jest."
+    ),
+    emoji(
+      "⚡ I have keen interest in DevOps things like making a CI/CD pipeline, deploying a monolith app on EC2 server. My favourite webserver is NGINX"
+    ),
+    emoji("⚡ I am learning AWS-CDK and Kafka")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
