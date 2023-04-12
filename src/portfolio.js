@@ -12,12 +12,11 @@ const illustration = {
 
 const greeting = {
   username: "Muhammad Shoaib",
-  title: "Hi all, I'm Shoaib",
+  title: "Nice to meet you! I'm Shoaib",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building scalable applications with  Javascript (Reactjs / Nodejs) and Golang"
+    "A software craftsman who loves building elegant, user-friendly web applications. 🚀"
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1XrPrRZzvcdBwTOb6SV8RE12I6fRl9H1F/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -31,6 +30,7 @@ const socialMediaLinks = {
   facebook: "https://web.facebook.com/hafizmuhammad.shoaib/",
   // medium: "https://medium.com/@saadpasta",
   stackoverflow: "https://stackoverflow.com/users/8317797/hafizmuhammad-shoaib",
+  twitter: "https://twitter.com/shoaibsilat",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -43,15 +43,23 @@ const skillsSection = {
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and scalable backend"
+      "⚡ Develop responsive and user-friendly web applications using modern technologies such as React, Angular, and NestJS."
     ),
     emoji(
-      "⚡ I write highly testable code. I am use to of writing unit test cases with 100% code coverage on Jest."
+      "⚡ Write clean, efficient, and maintainable code that adheres to industry best practices and standards."
     ),
     emoji(
-      "⚡ I have keen interest in DevOps things like making a CI/CD pipeline, deploying a monolith app on EC2 server. My favourite webserver is NGINX"
+      "⚡ Design and implement scalable, high-performance databases using MySQL and Postgres."
     ),
-    emoji("⚡ I am learning AWS-CDK and Kafka")
+    emoji(
+      "⚡ Solve complex problems and optimize application performance through the use of algorithms and data structures."
+    ),
+    emoji(
+      "⚡ Collaborate with cross-functional teams to deliver high-quality software products on time and within budget."
+    ),
+    emoji(
+      "⚡ Practice continuous learning and self-improvement by regularly practicing coding challenges and studying system design."
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -77,6 +85,10 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "Angular",
+      fontAwesomeClassname: "fab fa-angular"
     },
     {
       skillName: "nodejs",
@@ -156,10 +168,10 @@ const workExperiences = {
       company: "Diya Interactive",
       companylogo: require("./assets/images/diya.png"),
       date: "Feb 2019 – Oct 2019",
-      desc: `Worked as a full-stack developer and managing DevOps tasks at Diya Interactive (Diya Interactive is a Swedish company located in Stockholm. Working for Swedish clients for the past 7 years)`,
+      desc: `As a full-stack developer and DevOps guy at Diya Interactive, a Stockholm-based company.`,
       descBullets: [
-        "My main area of work is AngularJS, Reactjs, Flask, and MySQL",
-        "Build a recruitment system which helps the organization to ease the process of hiring a candidate."
+        "Leveraged my expertise in AngularJS, React, Flask, and MySQL as a full-stack developer at Diya Interactive, a Swedish company based in Stockholm that serves clients in Sweden and beyond.",
+        "Contributed to the development of a recruitment system that streamlined the hiring process for organizations, making it easier and more efficient for them to identify and onboard top talent."
       ]
     },
     {
@@ -167,11 +179,11 @@ const workExperiences = {
       company: "10Pearls",
       companylogo: require("./assets/images/10pearls.jpeg"),
       date: "Oct 2019 – July 2021",
-      desc: "Worked as a MERN stack/Golang developer",
+      desc: "Worked as a MERN stack / Golang developer",
       descBullets: [
-        "worked on a telemedicine health platform application. Fixed bugs on their frontend web/android and backend nodejs application",
-        "worked on a weather app reporting application. Develop new features and fixed bug on React Native application",
-        "worked on a ecommerce(launder) application. develop a frontend on React.js and take devops voluntarily and deployed whole stack on EC2 instance on AWS"
+        "Contributed to the development of a telemedicine health platform application by fixing bugs on both the frontend web/android and backend Node.js applications",
+        "Developed new features and fixed bugs on a React Native weather app reporting application",
+        "Built a frontend for an ecommerce (laundry) application using React.js and volunteered to manage DevOps tasks, deploying the entire stack on an EC2 instance on AWS."
       ]
     },
     {
@@ -179,10 +191,52 @@ const workExperiences = {
       company: "10Pearls",
       companylogo: require("./assets/images/10pearls.jpeg"),
       date: "Aug 2021 – Present",
-      desc: "Worked as a MERN stack/Golang developer",
+      desc: "Worked as a MERN stack / Golang developer",
       descBullets: [
-        "worked on an education platform application. My role is fullstack wrote a frontend on React.js and backend on AWS-CDK lambda (Node.js)",
-        "worked on a Golang project and help a developer in golang tasks."
+        "Contributing to the development of an education platform application as a full-stack MERN stack/Golang developer. Specifically, wrote the frontend using React.js and the backend using AWS-CDK lambda with Node.js",
+        "Assisting a developer in Golang tasks on another project."
+      ]
+    },
+    {
+      role: "Sr. Software Engineer",
+      company: "Airlift Technologies",
+      companylogo: require("./assets/images/airlift.jpeg"),
+      date: "Jan 2022 – June 2022",
+      desc: "Worked as a Backend developer",
+      descBullets: [
+        "Implemented clean and maintainable backend code for a delivery operation application using Node.js (NestJS) and PostgreSQL.",
+        "Established CI/CD pipelines to ensure code quality by checking code linting and running unit/integration tests.",
+        "Investigated and resolved a 502 issue on servers, and implemented mitigation measures to prevent similar issues from happening in the future.",
+        "Wrote unit tests for the API using Jest and an internally-developed framework.",
+        "Proactively monitored the application for bugs, user feedback, and performance, and recommended improvements and fixes as needed.",
+        "Managed a sub-team of developers in the implementation of new features.",
+        "Mentored fresh graduates in their daily tasks and encouraged adherence to best practices in code development."
+      ]
+    },
+    {
+      role: "Sr. Software Engineer",
+      company: "DGlobal",
+      companylogo: require("./assets/images/din-global.jpeg"),
+      date: "Aug 2022 - Oct 2022",
+      desc: "Worked as a Full-Stack developer",
+      descBullets: [
+        "Set up CI/CD pipelines using Github and ArgoCD for React and Node.js applications.",
+        "Deployed React and Node.js applications using Docker images and Helm charts on a k8s stack.",
+        "Created a basic structure for ReactJS and Nestjs applications."
+      ]
+    },
+    {
+      role: "Sr. Software Engineer",
+      company: "Rewaa",
+      companylogo: require("./assets/images/rewaa.jpeg"),
+      date: "Nov 2022 - Present",
+      desc: "Working as a Full-Stack developer",
+      descBullets: [
+        "Improving code quality of Angular and Node.js by practicing clean code and writing test cases with Jest and Test Bed",
+        "Optimizing frontend build to reduce page load time",
+        "Implementing best practices and optimizing frontend to avoid duplicate API calls and remove subscription to prevent memory leaks",
+        "Collaborating with the team to identify and resolve issues, and suggest improvements for the application.",
+        "Developing new features and functionalities for the Angular-Node.js application."
       ]
     }
   ]
@@ -222,7 +276,7 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Achievements 🏆 "),
   subtitle:
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
@@ -334,8 +388,7 @@ const podcastSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+  subtitle: "Looking to build something amazing together?",
   number: "+92-3367887046",
   email_address: "shoaibsilat9@gmail.com"
 };
@@ -343,8 +396,8 @@ const contactInfo = {
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: false // Set true to display this section, defaults to false
+  userName: "shoaibsilat", //Replace "twitter" with your twitter username without @
+  display: true // Set true to display this section, defaults to false
 };
 
 export {
