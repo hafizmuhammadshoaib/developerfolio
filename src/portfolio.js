@@ -11,7 +11,7 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Muhammad Shoaib",
+  username: "Hafiz Muhammad Shoaib Silat",
   title: "Nice to meet you! I'm Shoaib",
   subTitle: emoji(
     "A software craftsman who loves building elegant, user-friendly web applications. 🚀"
@@ -31,6 +31,7 @@ const socialMediaLinks = {
   // medium: "https://medium.com/@saadpasta",
   stackoverflow: "https://stackoverflow.com/users/8317797/hafizmuhammad-shoaib",
   twitter: "https://twitter.com/shoaibsilat",
+  upwork: "https://www.upwork.com/freelancers/~01714a757b24b89c73",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -39,43 +40,50 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I Do",
+  subTitle:
+    "PASSIONATE FULL STACK DEVELOPER EXPLORING CUTTING-EDGE TECHNOLOGIES",
   skills: [
     emoji(
-      "⚡ Develop responsive and user-friendly web applications using modern technologies such as React, Angular, and NestJS."
+      "⚡ Build responsive, user-friendly, and feature-rich web applications using modern frameworks like React, Angular, and NestJS."
     ),
     emoji(
-      "⚡ Write clean, efficient, and maintainable code that adheres to industry best practices and standards."
+      "⚡ Write clean, maintainable, and efficient code following industry best practices and modern standards."
     ),
     emoji(
-      "⚡ Design and implement scalable, high-performance databases using MySQL and Postgres."
+      "⚡ Design and implement scalable and optimized database solutions using PostgreSQL and MySQL."
     ),
     emoji(
-      "⚡ Solve complex problems and optimize application performance through the use of algorithms and data structures."
+      "⚡ Solve complex technical challenges and enhance application performance by leveraging advanced algorithms and data structures."
     ),
     emoji(
-      "⚡ Collaborate with cross-functional teams to deliver high-quality software products on time and within budget."
+      "⚡ Collaborate effectively with cross-functional teams to deliver high-quality software solutions within deadlines and budget constraints."
     ),
     emoji(
-      "⚡ Practice continuous learning and self-improvement by regularly practicing coding challenges and studying system design."
+      "⚡ Architect scalable backend systems with a strong foundation in Domain-Driven Design (DDD)."
+    ),
+    emoji(
+      "⚡ Build and maintain Event-Driven Architectures using AWS SQS and SNS for reliable and scalable messaging."
+    ),
+    emoji(
+      "⚡ Implement Event Sourcing to ensure consistent state management and traceability in distributed systems."
+    ),
+    emoji(
+      "⚡ Continuously enhance my skills by engaging in coding challenges, studying system design, and exploring emerging technologies."
     )
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
     {
-      skillName: "html-5",
+      skillName: "HTML5",
       fontAwesomeClassname: "fab fa-html5"
     },
     {
-      skillName: "css3",
+      skillName: "CSS3",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sass",
+      skillName: "Sass",
       fontAwesomeClassname: "fab fa-sass"
     },
     {
@@ -83,7 +91,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
+      skillName: "ReactJS",
       fontAwesomeClassname: "fab fa-react"
     },
     {
@@ -91,7 +99,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-angular"
     },
     {
-      skillName: "nodejs",
+      skillName: "Node.js",
       fontAwesomeClassname: "fab fa-node"
     },
     {
@@ -99,19 +107,23 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fa-brands fa-golang"
     },
     {
+      skillName: "Java",
+      fontAwesomeClassname: "fa-brands fa-java"
+    },
+    {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
     },
     {
-      skillName: "sql-database",
+      skillName: "SQL Databases",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "aws",
+      skillName: "AWS",
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "docker",
+      skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
     }
   ],
@@ -140,19 +152,47 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: false, //Set it to true to show Proficiency Section
+  viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "50%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
+      Stack: "React",
+      progressPercentage: "100%"
+    },
+    {
+      Stack: "Nestjs",
+      progressPercentage: "100%"
+    },
+    {
+      Stack: "Angular",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Golang",
       progressPercentage: "70%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Java - Spring Boot",
+      progressPercentage: "40%"
+    },
+    {
+      Stack: "MySQL",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "Postgres",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "AWS",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Docker",
+      progressPercentage: "90%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -236,7 +276,8 @@ const workExperiences = {
         "Optimizing frontend build to reduce page load time",
         "Implementing best practices and optimizing frontend to avoid duplicate API calls and remove subscription to prevent memory leaks",
         "Collaborating with the team to identify and resolve issues, and suggest improvements for the application.",
-        "Developing new features and functionalities for the Angular-Node.js application."
+        "Developing new features and functionalities for the Angular-Node.js application.",
+        ""
       ]
     }
   ]
@@ -253,17 +294,65 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Profile",
+  subtitle: "I have a strong Upwork profile with a 100% job success rate.",
   projects: [
     {
-      image: require("./assets/images/fenix.svg"),
-      projectName: "Fenix",
-      projectDesc: "I helped them creating their backend on Golang and gRPC",
+      image: require("./assets/images/golang-project-success-1.png"),
+      projectName: "Blockchain based storage platform (Not Actively Working)",
+      projectDesc:
+        "I worked on websockets for their internal chat system and implemented a new feature for their golang backend."
+      // footerLink: [{name: "On Going Project (Not Actively Working)", url: ""}]
+    },
+    {
+      image: require("./assets/images/golang-project-success-2.png"),
+      projectName: "Golang Security (Not Actively Working)",
+      projectDesc:
+        "I improved their golang codebase by introducing a singleton and IoC pattern with the help of DI and improved the vulnerabilities in their code."
+      // footerLink: [{name: "On Going Project (Not Actively Working)", url: ""}]
+    },
+    {
+      image: require("./assets/images/kooyaya-feedback.png"),
+      projectName: "Kooyaya (Not Actively Working)",
+      projectDesc:
+        "I built the internal portal for student teacher and admin using React. Their primary backend was wordpress and I used the REST API to fetch data.",
+      footerLink: [{name: "Visit Website", url: "https://www.kooyaya.com/"}]
+    },
+    {
+      image: require("./assets/images/rich-feedback.png"),
+      projectName: "AxisAgile Apps(Partially Working)",
+      projectDesc:
+        "I helped building them a frontend with React and Nodejs as backend. The app is built on jira framework and it helped generating a weekly report from jira sprint board.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://fenix.life/"
+          url: "https://axisagileapps.com/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/goflyer-feedback.png"),
+      projectName: "GoFlyer",
+      projectDesc:
+        "This is a flyer based webapp. I helped them in creating a frontend with Nextjs and backend with Nestjs.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://goflyer.ca/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/superlife-feedback.png"),
+      projectName: "Superlife",
+      projectDesc:
+        "This is a news based webapp. I helped them in creating a frontend with Nextjs and backend with Nestjs.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://superlife.ca/"
         }
         //  you can add extra buttons here.
       ]
@@ -397,7 +486,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "shoaibsilat", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 export {
